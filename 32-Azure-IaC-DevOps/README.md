@@ -241,7 +241,7 @@ https://github.com/stacksimplify/terraform-on-azure-with-azure-devops.git
 ```
 ## Step-03: Terraform Dependency Lock File Concept
 - Understand [Terraform Dependency Lock File Concept](https://www.terraform.io/docs/language/dependency-lock.html)
-- For detailed understanding we need to reference this topic from our [Demo-67: Azure HashiCorp Terraform Associate Certification course](https://github.com/stacksimplify/hashicorp-certified-terraform-associate-on-azure/tree/main/67-Terraform-Manage-Providers). Primarily refer [Step-04](https://github.com/stacksimplify/hashicorp-certified-terraform-associate-on-azure/tree/main/67-Terraform-Manage-Providers#step-04-command-terraform-providers-lock) and [Step-05](https://github.com/stacksimplify/hashicorp-certified-terraform-associate-on-azure/tree/main/67-Terraform-Manage-Providers#step-05-command-terraform-providers-lock-for-all-supported-platforms) of this section
+- For detailed understanding we need to reference this topic from our [Demo-67: Azure HashiCorp Terraform Associate Certification course](https://github.com/saikiranchalla1/learning-terraform-azure/tree/main/67-Terraform-Manage-Providers). Primarily refer [Step-04](https://github.com/saikiranchalla1/learning-terraform-azure/tree/main/67-Terraform-Manage-Providers#step-04-command-terraform-providers-lock) and [Step-05](https://github.com/saikiranchalla1/learning-terraform-azure/tree/main/67-Terraform-Manage-Providers#step-05-command-terraform-providers-lock-for-all-supported-platforms) of this section
 ```t
 # Go to Local Git Repo 
 cd demo-repos
