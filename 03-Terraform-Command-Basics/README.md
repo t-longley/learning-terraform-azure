@@ -98,7 +98,6 @@ rm -rf terraform.tfstate*
 3. terraform plan
 4. terraform apply
 5. terraform destroy      
- 
 
-
-
+## Labs
+1. [Introduction to IaC](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code)

@@ -158,3 +158,5 @@ rm -rf terraform.tfstate*
 - [Terraform Version Constraints](https://www.terraform.io/docs/configuration/version-constraints.html)
 - [Terraform Versions - Best Practices](https://www.terraform.io/docs/configuration/version-constraints.html#best-practices)
 
+## Labs
+1. [Manage versions](https://learn.hashicorp.com/tutorials/terraform/versions?in=terraform/1-0)
