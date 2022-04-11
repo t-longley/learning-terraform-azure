@@ -27,7 +27,7 @@ resource "azurerm_linux_virtual_machine" "bastion_host_linuxvm" {
   #computer_name = "bastionlinux-vm"  # Hostname of the VM (Optional)
   resource_group_name = azurerm_resource_group.rg.name
   location = azurerm_resource_group.rg.location
-  size = "Standard_D2as_v4"
+  size = "Standard_DS1_v2"
   admin_username = "azureuser"
   network_interface_ids = [ azurerm_network_interface.bastion_host_linuxvm_nic.id ]
   admin_ssh_key {
@@ -41,7 +41,7 @@ resource "azurerm_linux_virtual_machine" "bastion_host_linuxvm" {
   source_image_reference {
     publisher = "RedHat"
     offer = "RHEL"
-    sku = "7-LVM"
+    sku = "83-gen2"
     version = "latest"
   }
 }
