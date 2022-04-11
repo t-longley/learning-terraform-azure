@@ -136,12 +136,12 @@ terraform {
 ```t
 # Create a Null Resource and Provisioners
 resource "null_resource" "name" {
-  depends_on = [azurerm_linux_virtual_machine.bastionlinuxvm]
+  depends_on = [azurerm_linux_virtual_machine.bastion_host_linuxvm]
 # Connection Block for Provisioners to connect to Azure VM Instance
   connection {
     type = "ssh"
-    host = azurerm_linux_virtual_machine.bastionlinuxvm.public_ip_address
-    user = azurerm_linux_virtual_machine.bastionlinuxvm.admin_username
+    host = azurerm_linux_virtual_machine.bastion_host_linuxvm.public_ip_address
+    user = azurerm_linux_virtual_machine.bastion_host_linuxvm.admin_username
     private_key = file("${path.module}/ssh-keys/terraform-azure.pem")
   }
 
@@ -340,7 +340,7 @@ ls
 
 # Connect to Web Linux VM using Bastion Host VM
 1. Connect to Web Linux VM
-ssh -i ssh-keys/terraform-azure.pem azureuser@<Web-LinuxVM-PrivateIP>
+ssh -i /tmp/terraform-key.pem azureuser@<Web-LinuxVM-PrivateIP>
 sudo su - 
 cd /var/log
 tail -100f cloud-init-output.log
